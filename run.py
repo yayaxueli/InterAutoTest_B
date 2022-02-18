@@ -1,0 +1,1 @@
+print("hello world o o o qqq")
