@@ -14,10 +14,11 @@ def login():
         "password" : "12345678"
     }
     r= Request().post(url,json = data)
+    #return r['token']
     print(r)
 
 """
-个人信息，token被拒绝了，无法登陆
+个人信息，token被拒绝了，无法登陆（已修改返回login方法的token信息）
 get 
 """
 def info():
