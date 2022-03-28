@@ -3,6 +3,9 @@ from util.RequestsUtil import requests_get
 from util.RequestsUtil import requests_post
 from util.RequestsUtil import Request
 from config.Conf import ConfigYaml
+
+from common.Base import init_db
+
 """
 post json
 """

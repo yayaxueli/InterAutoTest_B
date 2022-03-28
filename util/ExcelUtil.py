@@ -19,10 +19,8 @@ class ExcelReader:
                 sheet = workbook.sheet_by_index(self.sheet_by)
             elif type(self.sheet_by) == str:
                 sheet = workbook.sheet_by_name(self.sheet_by)
-
             #首行
             title = sheet.row_values(0)
-
             for row in range(1,sheet.nrows):
                 self.data_list.append(dict(zip(title,sheet.row_values(row))))
                 #print(sheet.row_values(row))
